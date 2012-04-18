@@ -1,6 +1,6 @@
 package com.liftme;
 
-import rb.dtu.R;
+import com.liftme.R;
 import com.liftme.control.Server;
 import com.liftme.model.User;
 import com.liftme.model.Users;
@@ -11,21 +11,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.QuickContactBadge;
+import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Profile extends Activity {
 	private TextView _name;
@@ -69,7 +63,7 @@ public class Profile extends Activity {
         for (String friend : friends) {
         	if(!friend.equalsIgnoreCase((String) extras.getCharSequence("name"))){
 	        	ImageView friendImage = new ImageView(this);
-	        	int resId = this.getResources().getIdentifier(friend.toLowerCase(),"drawable","rb.dtu");
+	        	int resId = this.getResources().getIdentifier(friend.toLowerCase(),"drawable","com.liftme");
 	        	friendImage.setImageResource(resId);
 	        	friendImage.setPadding(4, 2, 4, 2);
 	        	LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(100, 100);
@@ -78,7 +72,7 @@ public class Profile extends Activity {
         	}
 		}
 
-        //SETTING THE CALLING CONTACT
+      //SETTING THE CALLING CONTACT
         _callTextView = (TextView) findViewById(R.id.callTextView);
         _callTextView.setText("Get in contact");
         
@@ -88,8 +82,7 @@ public class Profile extends Activity {
             public void onClick(View v) {
                 call();
             }
-        });
-        
+        });        
        
     }
     

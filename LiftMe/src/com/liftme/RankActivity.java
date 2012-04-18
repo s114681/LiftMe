@@ -1,6 +1,6 @@
 package com.liftme;
 
-import rb.dtu.R;
+import com.liftme.R;
 import com.liftme.control.Server;
 import com.liftme.listview.ContactAdapter;
 import com.liftme.model.User;

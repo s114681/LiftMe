@@ -14,7 +14,7 @@ import com.facebook.android.DialogError;
 import com.facebook.android.Facebook;
 import com.facebook.android.Facebook.DialogListener;
 import com.facebook.android.FacebookError;
-import rb.dtu.R;
+import com.liftme.R;
 
 import android.util.Log;
 import android.view.View;

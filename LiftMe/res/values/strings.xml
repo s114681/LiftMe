@@ -6,5 +6,6 @@
     <string name="alert_dialog_ok">OK</string>
     <string name="alert_dialog_cancel">Cancel</string>
     <string name="alert_dialog_text">The GPS is not enabled, do you want to enable it?</string>
+    <string name="call_prompt">Contact</string>
     
 </resources>

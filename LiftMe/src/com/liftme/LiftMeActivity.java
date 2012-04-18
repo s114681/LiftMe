@@ -1,6 +1,6 @@
 package com.liftme;
 
-import rb.dtu.R;
+import com.liftme.R;
 
 import android.app.TabActivity;
 import android.content.Intent;

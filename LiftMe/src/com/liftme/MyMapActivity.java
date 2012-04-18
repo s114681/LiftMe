@@ -9,7 +9,7 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.MyLocationOverlay;
 import com.google.android.maps.Overlay;
-import rb.dtu.R;
+import com.liftme.R;
 import com.liftme.control.Server;
 import com.liftme.model.Users;
 
