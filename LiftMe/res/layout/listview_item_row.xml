@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <ImageView
+            android:id="@+id/ownImage"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/riccardo"
+            android:layout_marginRight="3dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+    
+    <LinearLayout android:orientation="vertical"
+        android:layout_weight="1" android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        
+        <LinearLayout android:orientation="horizontal"
+            android:layout_weight="1" android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            
+            <TextView
+                android:id="@+id/ownNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riccardo"
+                android:textSize="22sp"
+            android:layout_weight="0.8" />
+
+            <TextView
+	            android:id="@+id/lastUpdateTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="few moments ago" 
+	            android:gravity="center_horizontal"
+            android:layout_weight="0.2"/>
+            
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_weight="1" android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TextView
+                android:id="@+id/currentPositionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/orientation"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:gravity="right"
+                android:padding="3dip"
+                android:src="@drawable/location_arrow" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="top"
+       android:orientation="vertical" >
+    
+       <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:paddingTop="15dp"
+		    android:paddingBottom="15dp">
+	        <ImageView
+	            android:id="@+id/profileImage"
+	            android:layout_width="150dp"
+	            android:layout_height="150dp"
+	            android:src="@drawable/simone" />
+	        
+	        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+		        <TextView
+		            android:id="@+id/name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            style="@android:style/TextAppearance.Large" />
+		        <!--android:textSize="30dp"-->
+		        
+		        <!-- more space between Title and descriptions -->
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=""
+		            style="@android:style/TextAppearance.Large"/>
+		        
+		        <TextView
+		            android:id="@+id/positionOne"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="positionOne"
+		            style="@android:style/TextAppearance.Medium"  />
+		        <TextView
+		            android:id="@+id/positionTwo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="positionTwo"
+		            style="@android:style/TextAppearance.Medium"  />
+		     </LinearLayout>
+	    </LinearLayout>
+
+        <TextView
+            android:id="@+id/friends"
+            android:text="Friends"
+			style="@style/mySecTitle"/>
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:scrollbars="horizontal"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp">
+	        
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+		        
+		        <LinearLayout 
+		            android:id="@+id/profileImages"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content">
+		        <!-- IMMAGINI DEGLI AMICI -->
+		        
+        	</LinearLayout>
+       	</HorizontalScrollView>
+       	                       
+        </LinearLayout>
+          
+        <LinearLayout 
+	      	 android:id="@+id/callLinearLayout1"
+	          android:layout_height="wrap_content"
+	          android:layout_width="match_parent"
+	          >
+
+            <TextView 
+                  android:id="@+id/callTextView"
+	          	  android:gravity="center_vertical"
+		          android:layout_height="wrap_content"
+		          android:layout_width="wrap_content"
+		          style="@android:style/TextAppearance.Medium"/>
+            
+            <LinearLayout 
+	      	 android:id="@+id/callLinearLayout2"
+	          android:layout_height="wrap_content"
+	          android:layout_width="wrap_content"
+	          android:gravity="right"
+	          >
+		          <ImageButton 
+		              android:id="@+id/callImageButton"
+			          android:layout_height="50dp"
+			          android:layout_width="50dp"
+		              android:background="@null"
+		           	  android:src="@null"
+		           	  />
+          	</LinearLayout>
+        </LinearLayout> 
+      	
+            
+         <TextView
+            android:id="@+id/score"
+            android:text="Score"
+			style="@style/mySecTitle"/>
+
+         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="4"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp">
+	        <TableRow >
+	       		 <TextView
+	       		     android:layout_weight="1" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="20dp" />
+		        <TextView
+		            android:layout_weight=".6" 
+		            android:id="@+id/positiveScore"
+		            android:layout_width="60dp"
+		            android:layout_height="50dp"
+		            android:background="#99CC00"
+		            android:gravity="center"
+		            android:text="+7"
+		            android:textAppearance="?android:attr/textAppearanceLarge"
+		            android:textSize="40dp" />
+		        <TextView
+		            android:layout_weight=".6" 
+		            android:id="@+id/negativeScore"
+		            android:layout_width="60dp"
+		            android:layout_height="50dp"
+		            android:background="#FF4444"
+		            android:gravity="center"
+		            android:text="-2"
+		            android:textAppearance="?android:attr/textAppearanceLarge"
+		            android:textSize="40dp" />
+		        <TextView
+		            android:layout_weight="1" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=""
+		            android:textSize="20dp" />
+	        </TableRow>
+
+		</TableLayout>
+			  
+        
+		
+    </LinearLayout>

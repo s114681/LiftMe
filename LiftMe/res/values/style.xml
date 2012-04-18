@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="mySecTitle">
+	<item name="android:layout_width">fill_parent</item>
+	<item name="android:layout_height">wrap_content</item>
+	<item name="android:typeface">monospace</item>
+	<item name="android:background">#191819</item>
+	<item name="android:textColor">#b0b0b0</item>
+	<item name="android:textStyle">bold</item>
+</style>
+</resources>

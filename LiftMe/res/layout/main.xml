@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titleliftme" />
+
+    <Button
+        android:id="@+id/mainLogin"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/buttonFacebook"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="Login with Facebook" />
+
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="Login with Google" />
+
+    <Button
+        android:id="@+id/buttonREGISTER"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="Register" />
+
+</LinearLayout>

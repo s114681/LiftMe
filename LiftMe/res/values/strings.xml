@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LiftMe</string>
+	<string name="alert_dialog_two_buttons_title">LiftMe Dialog</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_text">The GPS is not enabled, do you want to enable it?</string>
+    
+</resources>
