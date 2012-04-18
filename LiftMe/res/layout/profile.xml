@@ -81,7 +81,6 @@
        	</HorizontalScrollView>
        	                       
         </LinearLayout>
-          
         <LinearLayout 
 	      	 android:id="@+id/callLinearLayout1"
 	          android:layout_height="wrap_content"
